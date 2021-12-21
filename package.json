@@ -1,0 +1,24 @@
+{
+  "name": "nolgongdev",
+  "version": "0.0.1",
+  "description": "Developers tools",
+  "main": "index.js",
+  "authors": {
+    "name": "Max",
+    "email": "maxigong@nolgong.com"
+  },
+  "repository": "/nolgongdev",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/composition-api": "^1.4.2",
+    "vue-drawing-canvas": "^1.0.6",
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "gsap": "^3.9.0"
+  }
+}
