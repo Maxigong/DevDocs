@@ -106,6 +106,9 @@ export default {
       }
       if (this.matchCounter === this.cards.length / 2) {
         this.isModalActive = true;
+
+        // if using npm i canvas-confetti
+
         // var count = 100;
         // var defaults = {
         //   origin: { y: 0.5 },

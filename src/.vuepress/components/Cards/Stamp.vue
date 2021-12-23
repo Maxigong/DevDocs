@@ -11,7 +11,7 @@
             >
               <div class="card-top"></div>
               <div class="stamp" :class="{ isStampActive: card.isStampActive }">
-                <!-- <img src="@/assets/img/ciberman.png" alt="" /> -->
+                <img :src="card.stampImg" alt="" />
               </div>
             </div>
           </div>
@@ -31,8 +31,13 @@ export default {
     return {
       isSelected: 0,
       stampData: [
-        { id: 1, isStampActive: false, IsShaking: true },
-        // { id: 2, isStampActive: false, IsShaking: true },
+        {
+          id: 1,
+          isStampActive: false,
+          IsShaking: true,
+          stampImg: require('../../public/logo.png'),
+        },
+        // { id: 2, isStampActive: false, IsShaking: true,stampImg: require('../../public/logo.png'), },
       ],
     };
   },
@@ -119,7 +124,6 @@ export default {
 .stamp {
   width: 230px;
   height: 256px;
-  border: 2px solid;
   content: '';
   opacity: 0;
   position: absolute;

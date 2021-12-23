@@ -47,7 +47,7 @@ module.exports = {
         {
           title: 'Guide',
           collapsable: false,
-          children: ['', 'cards', 'parallax', 'games'],
+          children: ['', 'buttons', 'cards', 'games', 'parallax'],
         },
       ],
     },

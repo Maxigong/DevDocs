@@ -34,10 +34,8 @@ export default {
       cards: [
         {
           id: 1,
-          imgFront:
-            'https://med.stanford.edu/news/all-news/2021/09/cat-fur-color-patterns/_jcr_content/main/image.img.780.high.jpg/cat_by-Kateryna-T-Unsplash.jpg',
-          imgBack:
-            'https://med.stanford.edu/news/all-news/2021/09/cat-fur-color-patterns/_jcr_content/main/image.img.780.high.jpg/cat_by-Kateryna-T-Unsplash.jpg',
+          imgFront: require('../../public/logo.png'),
+          imgBack: require('../../public/logo_green.jpeg'),
           cardActive: false,
         },
         // {
