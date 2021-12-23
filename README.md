@@ -18,6 +18,6 @@ yarn dev
 
 ### External resources
 
-- details: Libraries references and more
+- Libraries references and more
 
 ## Made by Nolgong Developers
