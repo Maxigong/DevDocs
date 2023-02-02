@@ -19,6 +19,6 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
-    "gsap": "^3.9.0"
+    "gsap": "^3.11.4"
   }
 }
