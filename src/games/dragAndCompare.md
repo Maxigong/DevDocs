@@ -10,7 +10,7 @@ This examples required gsap
 
 :::
 
-<Draggable-DragAndCompare />
+<!-- <Draggable-DragAndCompare /> -->
 
 ::: warning
 MatchingCards uses nested components for the icons

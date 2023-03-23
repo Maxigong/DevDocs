@@ -13,7 +13,7 @@ All this examples required gsap
 
 :::
 
-<Draggable-DragCommon />
+<!-- <Draggable-DragCommon /> -->
 
 ::: tip Main Component
 
