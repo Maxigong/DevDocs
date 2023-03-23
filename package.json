@@ -19,6 +19,7 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
-    "gsap": "^3.11.4"
+    "gsap": "^3.11.4",
+    "pinch-zoom-js": "^2.3.5"
   }
 }

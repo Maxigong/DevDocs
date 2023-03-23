@@ -42,55 +42,55 @@ module.exports = {
                 text: "guide",
                 link: "/guide/",
             },
-        ],
-        sidebar: [
             {
-                title: "Guide!",
-                path: "/guide/",
-                collapsable: false, // optional, defaults to true
-                sidebarDepth: 1, // optional, defaults to 1
-                children: ["/guide/", "/guide/buttons", "/guide/cards"],
+                text: "games",
+                link: "/games/",
             },
             {
-                title: "Draggable!", // required
-                path: "/draggable/", // optional, link of the title, which should be an absolute path and must exist
-                collapsable: false, // optional, defaults to true
-                sidebarDepth: 1, // optional, defaults to 1
-                children: [
-                    "/draggable/",
-                    "/draggable/dragCommon",
-                    "/draggable/dragAndCompare",
-                ],
+                text: "ui",
+                link: "/ui/",
             },
         ],
-        // sidebar: {
-        //     "/guide/": [
-        //         {
-        //             title: "Guide",
-        //             collapsable: false,
-        //             children: [
-        //                 "",
-        //                 "buttons",
-        //                 "cards",
-        //                 "games",
-        //                 // "draggable",
-        //                 // 'parallax'
-        //             ],
-        //         },
-        //     ],
-        //     "/draggable/": [
-        //         {
-        //             title: "Draggable",
-        //             collapsable: false,
-        //             children: [
-        //                 "",
-        //                 "dragAndCompare",
-        //                 "dragCommon",
-        //                 // 'parallax'
-        //             ],
-        //         },
-        //     ],
-        // },
+
+        sidebar: {
+            "/guide/": [
+                {
+                    title: "Guide",
+                    collapsable: false,
+                    children: [
+                        "",
+                        "buttons",
+                        "cards",
+                        // "games",
+                        // "dragCommon",
+                        //             "/draggable/dragAndCompare",
+                        // "draggable",
+                        // 'parallax'
+                    ],
+                },
+            ],
+            "/ui/": [
+                {
+                    title: "UI",
+                    collapsable: false,
+                    // children: ["", "zoomImage"],
+                },
+            ],
+            "/games/": [
+                {
+                    title: "Games",
+                    collapsable: false,
+                    children: [
+                        "",
+                        "dragAndCompare",
+                        "dragCommon",
+                        "cardMatch",
+                        "pollManyOptions",
+                        // 'parallax'
+                    ],
+                },
+            ],
+        },
     },
 
     /**

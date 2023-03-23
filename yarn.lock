@@ -5770,6 +5770,11 @@
   "resolved" "https://registry.npmjs.org/pify/-/pify-4.0.1.tgz"
   "version" "4.0.1"
 
+"pinch-zoom-js@^2.3.5":
+  "integrity" "sha512-/fydIbmKTbVFINRTd/YytTADpmUBX54K+UEjpACiFN7JT1PkzffcZak8Mabx8o0hbzTsYmaDRmN/89t2U55oTw=="
+  "resolved" "https://registry.npmjs.org/pinch-zoom-js/-/pinch-zoom-js-2.3.5.tgz"
+  "version" "2.3.5"
+
 "pinkie-promise@^2.0.0":
   "integrity" "sha1-ITXW36ejWMBprJsXh3YogihFD/o="
   "resolved" "https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz"
