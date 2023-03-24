@@ -39,8 +39,9 @@ All this examples required gsap
 
 ## Example
 
+<ClientOnly>
 <Draggable-DragCommonGame/>
-
+</ClientOnly
 ## Snippets
 
 ::: tip Main Component
