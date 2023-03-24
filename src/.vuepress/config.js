@@ -74,8 +74,10 @@ module.exports = {
                         "",
                         "dragAndCompare",
                         "dragCommon",
+                        "dragAndMatch",
                         "pollManyOptions",
                         "sliderManyOptions",
+                        "sliderTwoOptions",
                         "cardMatch",
                         // 'parallax'
                     ],

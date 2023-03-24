@@ -145,8 +145,8 @@ This code is a Vue.js component that displays a list of options as buttons, each
 This examples required gsap, gsap is uses for animations. So it can be replace with CSS animations
 :::
 
-::: danger
-MatchingCards uses nested components
+::: warning Nested Components
+This component uses nested components
 :::
 
 ::: tip Parent Component

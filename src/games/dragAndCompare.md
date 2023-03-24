@@ -46,8 +46,8 @@ The script section includes the functionality of the component. It imports the G
 
 ## Snippets
 
-::: warning
-MatchingCards uses nested components for the icons
+::: warning Nested Components
+This component uses nested components
 :::
 
 ::: tip Main Component

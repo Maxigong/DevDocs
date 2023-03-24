@@ -53,7 +53,7 @@ When the matchCounter is equal to half the length of the cards array, all cards 
 ## Snippets
 
 ::: warning Nested Components
-MatchingCards uses nested components
+This component uses nested components
 :::
 
 ::: tip Parent Component

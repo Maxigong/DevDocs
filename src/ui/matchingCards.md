@@ -8,8 +8,8 @@ tags: ["games", "vue", "match"]
 
 <Games-MatchingCards/>
 
-::: danger
-MatchingCards uses nested components
+::: warning Nested Components
+This component uses nested components
 :::
 
 이것은 메모리 매칭 게임을 생성하는 Vue.js 컴포넌트입니다. 게임은 플레이어가 클릭하여 뒤집어 숨겨진 이미지를 드러내는 카드로 구성됩니다. 게임의 목표는 모든 카드가 짝지어질 때까지 일치하는 카드 쌍을 찾는 것입니다.

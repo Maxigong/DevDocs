@@ -1,41 +1,48 @@
 <template>
     <div class="activity-wrapper">
         <section class="activity-image-container top-section">
-            <img v-if="img" :src="img" :alt="title" />
+            <img :src="img" />
         </section>
-        <section
-            v-show="showTotalVotes"
-            class="slide-result-container result-section"
-        >
-            <h3>Total Votes: {{ totalVotes }}</h3>
-            <div class="activity-buttons">
-                <button
-                    ref="btns"
-                    v-for="(option, idx) in options"
-                    :key="idx"
-                    class="btn activity-btn"
-                    @click="handleClick(option, idx)"
-                >
-                    <Buttons-OptionsButtons
-                        :option="option"
-                        :showTotalVotes="showTotalVotes"
-                        :totalVotes="totalVotes"
-                    />
+        <section class="options-text">
+            <div v-show="!showTotalVotes" class="slide-container">
+                <div class="slide" v-if="options.length > 0">
+                    <p>
+                        {{ options[0].option }}
+                    </p>
+                    <input type="range" v-model="sliderValue" />
+                    <p>
+                        {{ options[1].option }}
+                    </p>
+                </div>
+                <button class="btn" @click="handleClick(options[answerRange])">
+                    Submit
                 </button>
             </div>
-        </section>
-        <section v-show="!showTotalVotes" class="slide-container">
-            <h2 v-if="options.length > 0">
-                {{ options[answerRange].option }}
-            </h2>
-            <input type="range" v-model="sliderValue" />
-            <button
-                v-if="options.length > 0"
-                class="btn"
-                @click="handleClick(options[answerRange])"
+            <!-- end of slider -->
+
+            <!-- Result -->
+            <!-- v-show="showTotalVotes" -->
+            <div
+                v-show="showTotalVotes"
+                class="slide-result-container result-section"
             >
-                Submit
-            </button>
+                <h3>Total Votes: {{ totalVotes }}</h3>
+                <div class="activity-buttons">
+                    <button
+                        ref="btns"
+                        v-for="(option, idx) in options"
+                        :key="idx"
+                        class="btn activity-btn"
+                        @click="handleClick(option, idx)"
+                    >
+                        <Buttons-OptionsButtons
+                            :option="option"
+                            :showTotalVotes="showTotalVotes"
+                            :totalVotes="totalVotes"
+                        />
+                    </button>
+                </div>
+            </div>
         </section>
     </div>
 </template>
@@ -100,23 +107,20 @@ export default {
             ],
         },
     },
+
     data() {
         return {
+            totalVotes: 0,
             showTotalVotes: false,
             answerRange: 0,
-            sliderValue: 0,
-            totalVotes: 0,
+            sliderValue: 50,
         };
     },
-    computed: {},
+
     watch: {
         sliderValue(value) {
-            this.options.forEach((element, idx) => {
-                let percentage = (idx * 100) / this.options.length;
-                if (value > percentage) {
-                    return (this.answerRange = idx);
-                }
-            });
+            let id = value >= 50 ? 1 : 0;
+            return (this.answerRange = id);
         },
     },
     methods: {
@@ -167,21 +171,73 @@ export default {
 </script>
 
 <style scoped>
+.section-container {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+/* option */
+.options-text {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0 1rem;
+    position: relative;
+}
+.option-text {
+    background: white;
+    color: black;
+    padding: 1rem;
+    font-size: 0.75rem;
+}
 .slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.result {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin: 1rem;
 }
-
 .slide-result-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
+    height: 100%;
+}
+
+.slide-single-result {
+    position: relative;
+    height: 30px;
+    text-align: start;
+    justify-content: space-between;
 }
 
 .activity-buttons {
@@ -189,8 +245,8 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 18px;
     width: 100%;
+    gap: 18px;
 }
 
 .activity-btn {
@@ -199,7 +255,6 @@ export default {
     text-align: start;
     justify-content: space-between;
     height: fit-content;
-    border: 0.5px solid #7e194b;
     border-radius: 100px;
     overflow: hidden;
     background: transparent;
@@ -208,7 +263,38 @@ export default {
     width: 100%;
 }
 
-.showTotalVotes {
-    visibility: visible;
+.btn {
+    width: 100%;
+    max-width: 302px;
+    border: 0.5px solid #7e194b;
+    color: #7e194b;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+    /* test */
+    width: 276px;
+    height: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 </style>

@@ -30,6 +30,10 @@ The component template consists of two sections: the image and the buttons' cont
 The component also has some data properties, such as showTotalVotes and totalVotes, that keep track of the total number of votes and whether to show the total vote count. The total vote count is displayed below the buttons.
 :::
 
+::: warning GSA
+This components uses gsap
+:::
+
 ## Example
 
 <StaedelGames-PollManyOptions/>
@@ -37,7 +41,7 @@ The component also has some data properties, such as showTotalVotes and totalVot
 ## Snippets
 
 ::: warning Nested Components
-PollManyOptions uses nested components
+This component uses nested components
 :::
 
 ::: tip Parent Component
