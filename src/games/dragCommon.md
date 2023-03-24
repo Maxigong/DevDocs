@@ -40,7 +40,7 @@ All this examples required gsap
 ## Example
 
 <ClientOnly>
-<Draggable-DragCommonGame/>
+<Draggable-DragCommon/>
 </ClientOnly
 ## Snippets
 
