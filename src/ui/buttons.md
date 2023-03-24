@@ -9,7 +9,7 @@ sidebarDepth: 3
 
 The explanation of the code was created using ChatGTP after sharing the code snippet.
 
-The prompt is, "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
+**_Prompt :_** "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
 :::
 
 ## Button Shake
@@ -125,6 +125,10 @@ The component also defines some CSS styles for the button element, including a t
 
 ## Options Buttons
 
+::: warning
+This examples required gsap, gsap is uses for animations. So it can be replace with CSS animations
+:::
+
 ### Description
 
 이 코드는 Vue.js 컴포넌트로, 각 버튼에 해당하는 옵션과 피드백이 있는 버튼 목록을 보여줍니다. 사용자는 하나의 옵션을 선택할 수 있으며 선택하면 해당 옵션의 투표 수가 1 증가하고 총 투표 수도 1 증가합니다. 첫 선택인 경우 총 투표 수가 표시됩니다. 선택된 옵션 버튼은 강조되며 강조를 업데이트하기 위한 애니메이션이 재생됩니다.
@@ -140,10 +144,6 @@ This code is a Vue.js component that displays a list of options as buttons, each
 <Buttons-OptionsButtonsWrapper/>
 
 ### Snippets
-
-::: warning
-This examples required gsap, gsap is uses for animations. So it can be replace with CSS animations
-:::
 
 ::: warning Nested Components
 This component uses nested components
@@ -317,10 +317,6 @@ This component uses nested components
 This is a Vue component that creates a progress bar. The component has several props, including the progress value, the maximum value, and the color of the progress bar. It also has a computed property that calculates the width of the progress bar based on the progress and maximum values.
 
 The component renders a div with a class of "progress-bar" that has a style attribute that sets the width of the progress bar based on the computed property. The div also has a background color set to the color prop passed in.
-:::
-
-::: warning
-This examples required gsap, gsap is uses for animations. So it can be replace with CSS animations
 :::
 
 ::: tip Child Component

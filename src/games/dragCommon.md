@@ -9,7 +9,7 @@ sidebarDepth: 2
 
 The explanation of the code was created using ChatGTP after sharing the code snippet.
 
-The prompt is, "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
+**_Prompt :_** "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
 :::
 
 ## Description
@@ -31,9 +31,9 @@ The "dragWord" method creates a Draggable instance for each word in the words co
 The style section contains CSS rules for the drag area, words container, and result word container. The "matched" class is used to style words that have been correctly matched by the user.
 :::
 
-::: danger Required GSAP installation
+::: warning Required GSAP installation
 
-All this examples required gsap
+This examples required gsap
 
 :::
 
