@@ -1,16 +1,48 @@
 ---
 tags: ["gsap", "draggable", "game"]
+sidebarDepth: 2
 ---
 
-# DragAndCompare
+# Drag And Compare
 
-::: danger Required GSAP installation
+::: tip ChatGTP Explanation
+
+The explanation of the code was created using ChatGTP after sharing the code snippet.
+
+The prompt is, "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
+:::
+
+## Description
+
+::: warning Required GSAP installation
 
 This examples required gsap
 
 :::
 
-<!-- <Draggable-DragAndCompare /> -->
+이 코드는 이미지 비교 도구를 만드는 Vue 컴포넌트입니다. 이 컴포넌트는 두 개의 이미지를 나란히 보여주는 컨테이너와 사용자가 하나의 이미지를 드래그할 수 있는 슬라이더로 이루어져 있습니다. 이 컴포넌트는 이미지 URL과 제목이 포함된 두 개의 객체를 props으로 받습니다.
+
+템플릿 섹션은 컴포넌트의 HTML 구조를 정의합니다. 사용자를 위한 힌트 문구, 두 개의 이미지를 담는 컨테이너, 그리고 드래그 가능한 슬라이더가 포함됩니다.
+
+스크립트 섹션은 컴포넌트의 기능을 정의합니다. 이 코드는 GreenSock Animation Platform (gsap) 라이브러리와 Draggable 플러그인을 가져와 gsap 인스턴스에 등록합니다. 컴포넌트는 기본 이미지와 드래그 가능한 인스턴스를 정의하는 등 여러 옵션을 포함하고 있습니다. mounted() 라이프사이클 훅은 드래그 가능한 인스턴스를 초기화하고, beforeDestroy() 훅은 컴포넌트가 파괴될 때 드래그 가능한 인스턴스를 제거하는 데 사용됩니다. 마지막으로, dragImages() 메서드는 드래그 가능한 슬라이더의 기능을 정의하는 데 사용됩니다.
+
+스타일 섹션은 컴포넌트의 CSS를 정의합니다. 이미지와 슬라이더의 크기와 위치, 그리고 드래그 가능한 홀더와 아이콘의 스타일을 포함합니다.
+
+::: tip English
+::: details Expand
+
+This code is a Vue component that creates an image comparison tool. It consists of a container that holds two images side by side, and a draggable slider that allows the user to reveal one image while hiding the other. The component takes an array of two objects as a prop, where each object contains an image URL and a title.
+
+The template section defines the HTML structure of the component. It includes a paragraph that serves as a hint for the user, the container that holds the two images, and the draggable slider.
+
+The script section includes the functionality of the component. It imports the GreenSock Animation Platform (gsap) library and the Draggable plugin, and registers the plugin with the gsap instance. The component then defines several options, including the default images to display and the draggable instance. The mounted() lifecycle hook is used to initialize the draggable instance, and the beforeDestroy() hook is used to remove the draggable instance when the component is destroyed. Finally, the dragImages() method is used to define the functionality of the draggable slider.
+:::
+
+## Example
+
+<Draggable-DragAndCompare />
+
+## Snippets
 
 ::: warning
 MatchingCards uses nested components for the icons

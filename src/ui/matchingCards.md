@@ -1,18 +1,16 @@
 ---
 tags: ["games", "vue", "match"]
-sidebarDepth: 2
 ---
 
-# Matching Cards
+# Games
 
-::: tip ChatGTP Explanation
+## Matching Cards
 
-The explanation of the code was created using ChatGTP after sharing the code snippet.
+<Games-MatchingCards/>
 
-The prompt is, "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
+::: danger
+MatchingCards uses nested components
 :::
-
-## Description
 
 이것은 메모리 매칭 게임을 생성하는 Vue.js 컴포넌트입니다. 게임은 플레이어가 클릭하여 뒤집어 숨겨진 이미지를 드러내는 카드로 구성됩니다. 게임의 목표는 모든 카드가 짝지어질 때까지 일치하는 카드 쌍을 찾는 것입니다.
 
@@ -44,16 +42,6 @@ If match1 and match2 are equal, the two cards are a match. The matchCounter is i
 If match1 and match2 are not equal, then the two cards do not match. The setTimeout function is called to delay the flipping of the two selected cards back over. The match1 and match2 values are reset to empty strings, and the selection1 and selection2 cards are set back to their inactive states. The valid value is toggled to true, allowing the player to select another pair of cards.
 
 When the matchCounter is equal to half the length of the cards array, all cards have been matched, and the isModalActive value is set to true, which displays the modal.
-:::
-
-## Example
-
-<Games-MatchingCards/>
-
-## Snippets
-
-::: warning Nested Components
-MatchingCards uses nested components
 :::
 
 ::: tip Parent Component

@@ -39,23 +39,19 @@ module.exports = {
         sidebarDepth: 0,
         nav: [
             {
-                text: "guide",
-                link: "/guide/",
-            },
-            {
-                text: "games",
-                link: "/games/",
-            },
-            {
-                text: "ui",
+                text: "UI",
                 link: "/ui/",
+            },
+            {
+                text: "Games",
+                link: "/games/",
             },
         ],
 
         sidebar: {
-            "/guide/": [
+            "/ui/": [
                 {
-                    title: "Guide",
+                    title: "UI",
                     collapsable: false,
                     children: [
                         "",
@@ -69,13 +65,7 @@ module.exports = {
                     ],
                 },
             ],
-            "/ui/": [
-                {
-                    title: "UI",
-                    collapsable: false,
-                    // children: ["", "zoomImage"],
-                },
-            ],
+
             "/games/": [
                 {
                     title: "Games",
@@ -84,8 +74,8 @@ module.exports = {
                         "",
                         "dragAndCompare",
                         "dragCommon",
-                        "cardMatch",
                         "pollManyOptions",
+                        "cardMatch",
                         // 'parallax'
                     ],
                 },
