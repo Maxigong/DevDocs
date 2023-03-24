@@ -39,7 +39,7 @@ All this examples required gsap
 
 ## Example
 
-<Draggable-DragCommon />
+<!-- <Draggable-DragCommon /> -->
 
 ## Snippets
 
