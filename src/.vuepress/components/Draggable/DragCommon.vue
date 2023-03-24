@@ -39,7 +39,6 @@ export default {
         rightKeywords: {
             type: Array,
             default: () => ["blue"],
-            // default: () => ["blue", "black", "yellow"],
         },
     },
     mounted() {
