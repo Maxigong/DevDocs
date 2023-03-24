@@ -27,8 +27,11 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
-import { Draggable } from "gsap/Draggable";
+// import { gsap } from "gsap";
+// import { Draggable } from "gsap/Draggable";
+
+import { gsap } from "gsap/dist/gsap";
+import { Draggable } from "gsap/dist/Draggable";
 gsap.registerPlugin(Draggable);
 export default {
     props: {
@@ -80,7 +83,6 @@ export default {
                                 y: 0,
                             });
                         } else if (!word.classList.contains("scored")) {
-                            console.log(word);
                             let isRightKeyword = self.rightKeywords.find(
                                 (k) => k == word.id
                             );
