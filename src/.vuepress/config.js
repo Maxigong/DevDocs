@@ -91,7 +91,12 @@ module.exports = {
                 {
                     title: "Carousel",
                     collapsable: false,
-                    children: ["", "basicCarousel"],
+                    children: [
+                        "",
+                        "basicCarousel",
+                        "carrouselCircle",
+                        "textCarousel",
+                    ],
                 },
             ],
         },
