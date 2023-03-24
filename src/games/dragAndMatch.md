@@ -9,7 +9,7 @@ sidebarDepth: 3
 
 The explanation of the code was created using ChatGTP after sharing the code snippet.
 
-**_Prompt :_** "I am writing a documentation site using vuepress, I will paste some codes and I want you to explain de code as I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
+**_Prompt :_** "I am writing a documentation site using vuepress, I will paste a code snippet and I want you to explain it to me as if I was a junior developer. The explanation needs to be clear but not too long and I need it in English and Korean."
 :::
 
 ## Description
