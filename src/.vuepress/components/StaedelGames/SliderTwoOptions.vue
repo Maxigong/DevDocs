@@ -86,24 +86,6 @@ export default {
                     longFeedBack:
                         'The artist calls the work <i>"a kinetic memento mori"</i>. The Latin expression means to be aware of one\'s own mortality. For Uecker, sand is the ultimate symbol of the earth. The Old Testament says, "For you are dust and to dust you shall become". With the words, God indicated that the first man, Adam, will return to what he was created from. In the Christian Church there is also the burial formula "Earth to earth, ashes to ashes, dust to dust."',
                 },
-                {
-                    id: 3,
-                    option: "plowing",
-                    votes: 0,
-                    shortFeedBack:
-                        "The cords make tracks in the sand in an eternal circle. The work is reminiscent of the cycle of becoming and passing away.",
-                    longFeedBack:
-                        'The artist calls the work <i>"a kinetic memento mori"</i>. The Latin expression means to be aware of one\'s own mortality. For Uecker, sand is the ultimate symbol of the earth. The Old Testament says, "For you are dust and to dust you shall become". With the words, God indicated that the first man, Adam, will return to what he was created from. In the Christian Church there is also the burial formula "Earth to earth, ashes to ashes, dust to dust."',
-                },
-                {
-                    id: 4,
-                    option: "circle",
-                    votes: 0,
-                    shortFeedBack:
-                        "The cords make tracks in the sand in an eternal circle. The work is reminiscent of the cycle of becoming and passing away.",
-                    longFeedBack:
-                        'The artist calls the work <i>"a kinetic memento mori"</i>. The Latin expression means to be aware of one\'s own mortality. For Uecker, sand is the ultimate symbol of the earth. The Old Testament says, "For you are dust and to dust you shall become". With the words, God indicated that the first man, Adam, will return to what he was created from. In the Christian Church there is also the burial formula "Earth to earth, ashes to ashes, dust to dust."',
-                },
             ],
         },
     },
