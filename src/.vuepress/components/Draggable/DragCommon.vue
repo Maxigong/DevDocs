@@ -43,11 +43,11 @@ export default {
         },
     },
     mounted() {
-        gsap.set(".result-word", {
-            opacity: 0,
-            yPercent: 200,
-            stagger: true,
-        });
+        // gsap.set(".result-word", {
+        //     opacity: 0,
+        //     yPercent: 200,
+        //     stagger: true,
+        // });
         // this.dragWord();
     },
     beforeDestroy() {
