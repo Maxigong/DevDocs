@@ -41,7 +41,8 @@ All this examples required gsap
 
 <ClientOnly>
 <Draggable-DragCommon/>
-</ClientOnly
+</ClientOnly>
+
 ## Snippets
 
 ::: tip Main Component

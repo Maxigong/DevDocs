@@ -42,7 +42,7 @@ The script section includes the functionality of the component. It imports the G
 
 <ClientOnly>
 <Draggable-DragAndCompare />
-<ClientOnly/>
+</ClientOnly>
 
 ## Snippets
 
