@@ -46,6 +46,10 @@ module.exports = {
                 text: "Games",
                 link: "/games/",
             },
+            {
+                text: "Carousel",
+                link: "/carousel/",
+            },
         ],
 
         sidebar: {
@@ -81,6 +85,13 @@ module.exports = {
                         "cardMatch",
                         // 'parallax'
                     ],
+                },
+            ],
+            "/carousel/": [
+                {
+                    title: "Carousel",
+                    collapsable: false,
+                    children: ["", "basicCarousel"],
                 },
             ],
         },
