@@ -43,12 +43,12 @@ export default {
         },
     },
     mounted() {
-        // gsap.set(".result-word", {
-        //     opacity: 0,
-        //     yPercent: 200,
-        //     stagger: true,
-        // });
-        // this.dragWord();
+        gsap.set(".result-word", {
+            opacity: 0,
+            yPercent: 200,
+            stagger: true,
+        });
+        this.dragWord();
     },
     beforeDestroy() {
         this.draggableInstance.forEach((element) => {
