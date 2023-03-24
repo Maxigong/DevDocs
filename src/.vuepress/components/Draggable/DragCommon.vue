@@ -27,11 +27,8 @@
 </template>
 
 <script>
-// import { gsap } from "gsap";
-// import { Draggable } from "gsap/Draggable";
-
-import { gsap } from "gsap/dist/gsap";
-import { Draggable } from "gsap/dist/Draggable";
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
 gsap.registerPlugin(Draggable);
 export default {
     props: {
@@ -42,6 +39,7 @@ export default {
         rightKeywords: {
             type: Array,
             default: () => ["blue"],
+            // default: () => ["blue", "black", "yellow"],
         },
     },
     mounted() {
@@ -50,7 +48,7 @@ export default {
             yPercent: 200,
             stagger: true,
         });
-        this.dragWord();
+        // this.dragWord();
     },
     beforeDestroy() {
         this.draggableInstance.forEach((element) => {
@@ -83,6 +81,7 @@ export default {
                                 y: 0,
                             });
                         } else if (!word.classList.contains("scored")) {
+                            console.log(word);
                             let isRightKeyword = self.rightKeywords.find(
                                 (k) => k == word.id
                             );
