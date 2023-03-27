@@ -51,6 +51,10 @@ module.exports = {
                 text: "Carousel",
                 link: "/carousel/",
             },
+            {
+                text: "GitGub",
+                link: "https://github.com/Maxigong/DevDocs",
+            },
         ],
 
         sidebar: {
