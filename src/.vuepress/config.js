@@ -37,6 +37,7 @@ module.exports = {
         editLinkText: "",
         lastUpdated: true,
         sidebarDepth: 0,
+
         nav: [
             {
                 text: "UI",
@@ -53,6 +54,13 @@ module.exports = {
         ],
 
         sidebar: {
+            "/home/": [
+                {
+                    title: "Home",
+                    collapsable: false,
+                    children: ["/ui/", "/games/", "/carousel/"],
+                },
+            ],
             "/ui/": [
                 {
                     title: "UI",

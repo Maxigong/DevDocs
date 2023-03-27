@@ -3,7 +3,7 @@ home: true
 heroImage: logo.png
 tagline: Developers tools
 actionText: Quick Start →
-actionLink: /ui/
+actionLink: /home/
 features:
     - title: Frontend
       details: Animations,Effects and Blocks
