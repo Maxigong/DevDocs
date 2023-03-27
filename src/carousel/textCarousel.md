@@ -104,11 +104,9 @@ The component uses the GSAP animation library to handle the dragging and movemen
 <script>
     import { gsap } from "gsap";
     import { Draggable } from "gsap/Draggable";
-    import ArrowIcon from "../icons/ArrowIcon.vue";
     gsap.registerPlugin(Draggable);
     export default {
         name: "SliderTop",
-        components: { ArrowIcon },
         props: {
             pk: {
                 type: String,

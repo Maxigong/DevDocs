@@ -52,11 +52,9 @@
 <script>
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
-import ArrowIcon from "../icons/ArrowIcon.vue";
 gsap.registerPlugin(Draggable);
 export default {
     name: "SliderTop",
-    components: { ArrowIcon },
     props: {
         pk: {
             type: String,
