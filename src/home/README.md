@@ -1,12 +1,12 @@
 ## Section
 
-### UI
-
-[Visit](/ui/)
-
 ### Games
 
 [Visit](/games/)
+
+### UI
+
+[Visit](/ui/)
 
 ### Carousel
 

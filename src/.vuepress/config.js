@@ -40,12 +40,12 @@ module.exports = {
 
         nav: [
             {
-                text: "UI",
-                link: "/ui/",
-            },
-            {
                 text: "Games",
                 link: "/games/",
+            },
+            {
+                text: "UI",
+                link: "/ui/",
             },
             {
                 text: "Carousel",
